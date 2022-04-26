@@ -1,3 +1,18 @@
+# Social network
+---
+The application is written in React, TypeScript, Firebase
+---
+![alt text](src/components/img/MyWay.jpg "Screen of App")
+---
+## Stack of technology:
+
+* React 
+* TypeScript
+* Firebase 
+* Material UI
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
