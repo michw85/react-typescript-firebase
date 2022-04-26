@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7bb1f3;
+    padding: 1.2rem 3rem .6rem;
+}
+
+.header .image-wrapper {
+    width: 20%;
+}
+
+.header .logoMW{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+.header .wrapper {
+    margin-left: 20px;
+    margin-right: 10px;
+    /* width: calc(75% - 16px); */
+    width: 100%;
+    border-radius: 30px;
+    background-color: #F9F9F9;
+    position: relative;
+}
+
+.header .wrapper >input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #004AAD;
+    font-size: 16px;    
+    text-align: center;
+    padding: 15px;
+}
+.header .wrapper >input::placeholder {
+    color: #7bb1f3;
+}
+
+.header .wrapper >svg {
+    fill: #7bb1f3 ! important;
+  position: absolute;
+  top: 10px;
+  left: 46%;
+}

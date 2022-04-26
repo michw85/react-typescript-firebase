@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import Routers from "./components/routes/Routers";
+import "./index.css";
+
+import * as firebase from "firebase/app";
+import { AuthProvider } from "./components/providers/AuthProvider";
+// import { initializeApp } from "firebase/app";
+
+// const app = initializeApp({
+firebase.initializeApp({
+  apiKey: "AIzaSyDUeh6oW2Mvl2rzaPHJ3TM9hZfzUbxX73k",
+  authDomain: "mw-network.firebaseapp.com",
+  projectId: "mw-network",
+  storageBucket: "mw-network.appspot.com",
+  messagingSenderId: "1028417985126",
+  appId: "1:1028417985126:web:1326dca507c82dc3b5aba7",
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <Routers />
+    </AuthProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

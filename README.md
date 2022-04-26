@@ -1,4 +1,4 @@
-# Social network
+# Social network MyWay
 ---
 The application is written in React, TypeScript, Firebase
 ---
